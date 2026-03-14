@@ -1,0 +1,28 @@
+%% -*- mode: erlang;erlang-indent-level: 4;indent-tabs-mode: nil -*-
+
+[
+ {kernel, [
+           {logger_level, info},
+           {logger,
+            [{handler, default, logger_std_h,
+              #{level => info,
+                config => #{type => standard_io}}}
+            ]}
+          ]},
+ {nova, [
+         {use_stacktrace, false},
+         {environment, prod},
+         {cowboy_configuration, #{
+                                  port => 8080
+                                 }},
+         {dev_mode, false},
+         {bootstrap_application, erlang_secure_coding},
+         {plugins, [
+                    {pre_request, nova_request_plugin, #{decode_json_body => true}}
+                   ]}
+        ]},
+ {arizona_nova, [
+     {pubsub_scope, nova_scope},
+     {live_reload, false}
+ ]}
+].

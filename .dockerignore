@@ -1,0 +1,8 @@
+_build/
+.git/
+.github/
+erl_crash.dump
+*.beam
+.rebar3/
+CLAUDE.md
+.tool-versions

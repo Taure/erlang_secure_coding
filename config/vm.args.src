@@ -1,0 +1,12 @@
+## Name of the node
+-name erlang_secure_coding@127.0.0.1
+
+## Cookie for distributed erlang
+-setcookie erlang_secure_coding_cookie
+
+## Enable kernel poll and SMP
++K true
++A30
+
+## Heartbeat for container health
+-heart
