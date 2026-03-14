@@ -7,7 +7,14 @@ on:
 
 jobs:
   ci:
-    uses: Taure/erlang-ci/.github/workflows/ci.yml@v1
+    uses: Taure/erlang-ci/.github/workflows/ci.yml@v2
     with:
       enable-ct: true
 
+  release:
+    needs: ci
+    if: github.event_name == 'push'
+    uses: Taure/erlang-ci/.github/workflows/release.yml@v2
+    permissions:
+      contents: write
+    secrets: inherit
