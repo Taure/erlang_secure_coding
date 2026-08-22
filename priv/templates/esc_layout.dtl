@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erlang Secure Coding</title>
+    <script src="/assets/js/tailwind.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/app.css" />
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-indigo-700 text-white px-6 py-4">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="/" class="text-xl font-bold tracking-tight">Erlang Secure Coding</a>
+            <span class="text-indigo-200 text-sm">Interactive Security Curriculum</span>
+        </div>
+    </nav>
+    <main class="max-w-5xl mx-auto px-6 py-8">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="text-center text-gray-400 text-sm py-8">
+        Built with Nova
+    </footer>
+</body>
+</html>

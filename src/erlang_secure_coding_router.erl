@@ -10,8 +10,10 @@ routes(_Environment) ->
             security => false,
             routes => [
                 {"/", fun esc_page_controller:index/1, #{methods => [get]}},
-                {"/modules/:module_id", fun esc_page_controller:index/1, #{methods => [get]}},
-                {"/live", esc_live_handler, #{protocol => ws}},
+                {"/modules/:module_id", fun esc_page_controller:show_module/1, #{methods => [get]}},
+                {"/modules/:module_id/quiz", fun esc_page_controller:submit_quiz/1, #{
+                    methods => [post]
+                }},
                 {"/assets/[...]", "static/assets"}
             ]
         }

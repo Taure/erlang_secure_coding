@@ -1,14 +1,9 @@
-.PHONY: all compile serve assets clean test check
+.PHONY: all compile serve clean test check
 
 all: compile
 
 compile:
 	@rebar3 compile
-	@$(MAKE) assets
-
-assets:
-	@mkdir -p priv/static/assets/js
-	@cp _build/default/lib/arizona_core/priv/static/assets/js/*.min.js priv/static/assets/js/ 2>/dev/null || true
 
 serve: compile
 	@rebar3 nova serve
@@ -24,4 +19,3 @@ check:
 
 clean:
 	@rebar3 clean
-	@rm -rf priv/static/assets/js/arizona*.min.js
