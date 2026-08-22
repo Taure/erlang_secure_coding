@@ -73,7 +73,7 @@ modules() ->
     ].
 ```
 
-That's it — the home page and module view render automatically from this list.
+That's it - the home page and module view render automatically from this list.
 
 ### 3. Data structure reference
 
@@ -153,8 +153,8 @@ The test suite in `test/esc_curriculum_SUITE.erl` automatically validates:
 ## Adding Tests
 
 Test suites live in `test/`. The existing suites cover:
-- `esc_curriculum_SUITE` — data integrity for all modules
-- `esc_quiz_grader_SUITE` — grading logic
+- `esc_curriculum_SUITE` - data integrity for all modules
+- `esc_quiz_grader_SUITE` - grading logic
 
 If you add new curriculum features (e.g. a new question type), add corresponding test cases.
 
@@ -167,8 +167,8 @@ fly deploy
 ```
 
 The `Dockerfile` builds a production release. Configuration:
-- `config/dev_sys.config.src` — local development
-- `config/prod_sys.config.src` — production (Fly.io)
+- `config/dev_sys.config.src` - local development
+- `config/prod_sys.config.src` - production (Fly.io)
 
 ## CI
 

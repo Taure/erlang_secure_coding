@@ -6,18 +6,18 @@ Interactive web-based curriculum teaching developers how to write secure Erlang/
 
 The curriculum covers 12 modules, each with lessons, code examples, and quizzes:
 
-1. **Introduction to Erlang Security** — BEAM VM security model
-2. **Atom Exhaustion** — Creating atoms from untrusted input
-3. **Serialisation/Deserialization** — Unsafe `binary_to_term/1`
-4. **Command Injection** — `os:cmd/1` with untrusted input
-5. **Sensitive Data** — Process state visibility and crash dumps
-6. **Memory Exhaustion** — Resource starvation attacks
-7. **Distribution** — Erlang distribution protocol risks
-8. **NIF & Port Safety** — Native interface and external port security
-9. **Code Loading** — Runtime code loading without verification
-10. **Scheduling & Types** — Scheduler starvation, type safety
-11. **Introspection** — Observer and reflection-based disclosure
-12. **Web Security** — Web vulnerabilities in Nova applications
+1. **Introduction to Erlang Security** - BEAM VM security model
+2. **Atom Exhaustion** - Creating atoms from untrusted input
+3. **Serialisation/Deserialization** - Unsafe `binary_to_term/1`
+4. **Command Injection** - `os:cmd/1` with untrusted input
+5. **Sensitive Data** - Process state visibility and crash dumps
+6. **Memory Exhaustion** - Resource starvation attacks
+7. **Distribution** - Erlang distribution protocol risks
+8. **NIF & Port Safety** - Native interface and external port security
+9. **Code Loading** - Runtime code loading without verification
+10. **Scheduling & Types** - Scheduler starvation, type safety
+11. **Introspection** - Observer and reflection-based disclosure
+12. **Web Security** - Web vulnerabilities in Nova applications
 
 Each module includes:
 - Side-by-side vulnerable vs. safe code examples
@@ -26,8 +26,8 @@ Each module includes:
 
 ## Stack
 
-- [Nova](https://github.com/novaframework/nova) — Erlang web framework
-- [erlydtl](https://github.com/erlydtl/erlydtl) — Django-style server-side templates
+- [Nova](https://github.com/novaframework/nova) - Erlang web framework
+- [erlydtl](https://github.com/erlydtl/erlydtl) - Django-style server-side templates
 - Tailwind CSS
 
 ## Development
