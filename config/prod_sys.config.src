@@ -18,11 +18,8 @@
          {dev_mode, false},
          {bootstrap_application, erlang_secure_coding},
          {plugins, [
-                    {pre_request, nova_request_plugin, #{decode_json_body => true}}
+                    {pre_request, nova_request_plugin, #{decode_json_body => true,
+                                                            read_urlencoded_body => true}}
                    ]}
-        ]},
- {arizona_nova, [
-     {pubsub_scope, nova_scope},
-     {live_reload, false}
- ]}
+        ]}
 ].

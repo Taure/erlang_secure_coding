@@ -28,9 +28,6 @@ WORKDIR /app
 
 COPY --from=builder /app/_build/prod/rel/erlang_secure_coding ./
 
-# Arizona static assets
-RUN mkdir -p lib/arizona_core-*/priv/static 2>/dev/null || true
-
 ENV HOME=/app
 EXPOSE 8080
 
