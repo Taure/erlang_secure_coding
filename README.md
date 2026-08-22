@@ -27,7 +27,7 @@ Each module includes:
 ## Stack
 
 - [Nova](https://github.com/novaframework/nova) — Erlang web framework
-- [Arizona](https://github.com/Taure/arizona_core) — Real-time LiveView framework
+- [erlydtl](https://github.com/erlydtl/erlydtl) — Django-style server-side templates
 - Tailwind CSS
 
 ## Development

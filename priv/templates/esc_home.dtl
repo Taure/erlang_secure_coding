@@ -1,0 +1,21 @@
+{% extends "esc_layout.dtl" %}
+{% block content %}
+<div id="home">
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900 mb-2">Security Curriculum</h1>
+        <p class="text-gray-600">Learn to write secure Erlang/OTP applications through interactive lessons and quizzes.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for module in modules %}
+        <a href="/modules/{{ module.id }}" class="block bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-indigo-300 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+                <span class="bg-indigo-100 text-indigo-700 text-sm font-semibold px-2.5 py-0.5 rounded">Module {{ module.number }}</span>
+                <span class="text-gray-400 text-sm">{{ module.estimated_minutes }} min</span>
+            </div>
+            <h2 class="text-lg font-semibold text-gray-900 mb-2">{{ module.title }}</h2>
+            <p class="text-gray-600 text-sm">{{ module.description }}</p>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
